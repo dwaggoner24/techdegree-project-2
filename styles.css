@@ -24,7 +24,7 @@ header {
     padding-bottom: 15px;
 }
 
-.header_nav {
+#header_nav {
     list-style-type: none;
     padding: 0;
     background-color: rgb(248, 248, 248);
@@ -33,7 +33,7 @@ header {
     align-items: center;
 }
 
-.link1, .link2, .link3 {
+#link1, #link2, #link3 {
     margin-top: 5px;
     text-align: center;
     font-weight: bold;
@@ -111,7 +111,7 @@ footer {
     justify-content: space-between;
 }
 
-.footnav1, .footnav2, .footnav3 {
+#footnav1, #footnav2, #footnav3 {
     display: none;
 }
 
@@ -133,13 +133,13 @@ footer {
         border: 0;
     }
 
-    .header_nav {
+    #header_nav {
         flex-direction: row;
         margin-left: 200px;
         margin-right: 200px;    
     }
 
-    .link1, .link2, .link3 {
+    #link1, #link2, #link3 {
         background-color: rgb(248, 248, 248);
         border-style: none;
     }
@@ -192,7 +192,7 @@ footer {
         display: none;
     }
 
-    .footnav1, .footnav2, .footnav3 {
+    #footnav1, #footnav2, #footnav3 {
         display: flex;
         justify-content: space-between;        
         font-weight: bold;
@@ -212,16 +212,16 @@ footer {
     header {
         justify-content: space-between;
     }
-    .header_nav {
+    #header_nav {
         margin-left: 10px;
     }
-    .header_nav .name2 {
+    #header_nav .name2 {
         display: flex;
         white-space: nowrap;
         padding-right: 67%;
         padding-left: 5px;
     }
-    .header_nav li {
+    #header_nav li {
         padding: 5px 20px 10px 20px;
     }
     #name {
