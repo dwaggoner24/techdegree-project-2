@@ -97,7 +97,8 @@ p {
 footer {
     background-color: rgb(248, 248, 248);
     color: rgb(102, 98, 98); 
-    padding: 30px 25px;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .footlist {
@@ -146,7 +147,8 @@ footer {
     .img1 {
         width: 35%;
         margin-top: 15px;
-        float: right;  /*How to put a paragraph over an image or an image or a paragraph box to make it fit in header section*/
+        margin-left: 75px;
+        float: right;
     }
 
     .intro {
@@ -159,7 +161,12 @@ footer {
     /*Body*/
 
     #column {
-        column-count: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #column .info {
+        flex-basis: 50%;
     }
 
     img {
@@ -176,36 +183,43 @@ footer {
         padding-right: 10%;
     }
 
+    footer {
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
     #top {
         display: none;
     }
 
     .footnav1, .footnav2, .footnav3 {
         display: flex;
-        justify-content: right;        /*How do I make the links go to the right and the name stay on the left*/
-        align-items: flex-end;
+        justify-content: space-between;        
         font-weight: bold;
         margin-right: 0;
     }
-    
+
+    .foot_name {
+        display: flex;
+        padding-right: 47%;
+        padding-left: 5px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
 /*Heading*/
 
-    .main_nav {
-    width: 100%;
-    min-height: 30px;
-    padding: 10px;
-    text-align: right;
+    header {
+        justify-content: space-between;
     }
     .header_nav {
         margin-left: 10px;
     }
     .header_nav .name2 {
         display: flex;
-        padding-right: 565px ;
-        padding-left: 0;
+        white-space: nowrap;
+        padding-right: 67%;
+        padding-left: 5px;
     }
     .header_nav li {
         padding: 5px 20px 10px 20px;
@@ -220,13 +234,13 @@ footer {
     } 
 
     /*Body*/
-    #column {
-        column-count: 3;  /*columns are wonky at 1024px*/
+    #column .info {
+        flex-basis: 33%;
     }
 
     section {
         background-color: white;
-        padding-right: 20px;
+        padding-right: 5px;
         margin-left: 10px;
     }
     body {
