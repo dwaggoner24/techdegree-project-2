@@ -1,0 +1,245 @@
+/*Universal Elements*/
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Heading Elements*/
+.name2 {
+    display: none;
+}
+
+header {
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 20px 25px;
+    margin: 0 auto;
+    border: 0;
+    font-size: medium;
+}
+
+#name {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.header_nav {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link1, .link2, .link3 {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+    width: 100%;
+    border: 5px solid white;
+}
+
+.img1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 70%;
+    height: 20%;
+}
+
+/*Body Elements*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: medium;
+    color: rgb(56, 55, 55); 
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    margin: 15px;
+    width: 90%;
+}
+
+section {
+    background-color: white;
+}
+
+.portfolio {
+    font-size: 1.125rem;
+    padding-top: 20px;
+}
+
+h2, h3 {
+    margin: 8px;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+    margin: 1rem;                      
+}
+
+/*Footer Elements*/
+
+footer {
+    background-color: rgb(248, 248, 248);
+    color: rgb(102, 98, 98); 
+    padding: 30px 25px;
+}
+
+.footlist {
+    border-top: 1px solid rgb(201, 195, 195);
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 0;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footnav1, .footnav2, .footnav3 {
+    display: none;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+    /*Heading*/
+    .wrap {
+        min-height: 100vh;
+    }
+
+    .name2 {
+        display: none;
+    }
+
+    header {
+        padding: 20px 25px;
+        margin: 0;
+        border: 0;
+    }
+
+    .header_nav {
+        flex-direction: row;
+        margin-left: 200px;
+        margin-right: 200px;    
+    }
+
+    .link1, .link2, .link3 {
+        background-color: rgb(248, 248, 248);
+        border-style: none;
+    }
+
+    .img1 {
+        width: 35%;
+        margin-top: 15px;
+        float: right;  /*How to put a paragraph over an image or an image or a paragraph box to make it fit in header section*/
+    }
+
+    .intro {
+        margin: 100px;
+        margin-left: 0;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    /*Body*/
+
+    #column {
+        column-count: 2;
+    }
+
+    img {
+        width: 95%;
+    }
+    section {
+        margin-right: 10px;
+    }
+
+    /*Footer*/
+
+    .cont {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #top {
+        display: none;
+    }
+
+    .footnav1, .footnav2, .footnav3 {
+        display: flex;
+        justify-content: right;        /*How do I make the links go to the right and the name stay on the left*/
+        align-items: flex-end;
+        font-weight: bold;
+        margin-right: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+/*Heading*/
+
+    .main_nav {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    text-align: right;
+    }
+    .header_nav {
+        margin-left: 10px;
+    }
+    .header_nav .name2 {
+        display: flex;
+        padding-right: 565px ;
+        padding-left: 0;
+    }
+    .header_nav li {
+        padding: 5px 20px 10px 20px;
+    }
+    #name {
+        display: none;
+    }
+
+    .img1 {
+        width: 30%;
+        height: 180px;
+    } 
+
+    /*Body*/
+    #column {
+        column-count: 3;  /*columns are wonky at 1024px*/
+    }
+
+    section {
+        background-color: white;
+        padding-right: 20px;
+        margin-left: 10px;
+    }
+    body {
+        background-color: rgb(248, 248, 248);
+    }
+
+    /*Footer*/
+    .cont {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+}
+
+
+
